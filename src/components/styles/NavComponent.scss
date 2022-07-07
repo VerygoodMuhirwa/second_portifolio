@@ -1,0 +1,43 @@
+@import "../../style/_variables";
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 50px 0px 50px;
+
+    .content {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                cursor: pointer;
+                color: #B4C1DD;
+                margin-right: 20px;
+                font-size: 0.89rem;
+
+                span {
+                    font-family: 'Oswald', sans-serif;
+                    color: $primaryColor;
+                }
+            }
+        }
+
+        button {
+            color: $primaryColor;            
+            background-color: $backgroundColor;
+
+            border: 1px solid $primaryColor;
+            border-radius: 3px;
+
+            width: 75px;
+            height: 50px;
+
+            cursor: pointer;
+        }
+    }
+}
