@@ -1,0 +1,83 @@
+@import "../../style/_variables";
+
+.exeptionProjectArea {
+    display: flex;
+}
+
+.project {
+    flex: 1;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    margin: 20px 30px;
+
+    box-shadow: 5px 10px 10px;
+
+    position: relative;
+    
+    max-width: 800px;
+    height: 300px;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+
+        .project__before_background {
+            filter: blur(0);
+        }
+    }
+
+    .project__before_background {
+        transition: all ease-in-out 0.4s;
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        filter: grayscale(100%) blur(2px);
+    }
+
+    .project__project__projectProfilePicture {
+        transition: all ease-in-out 0.3s;
+        transition-timing-function: cubic-bezier(.5,.01,.13,1.47);
+
+        filter:  brightness(100%);
+        
+        flex: 1;
+        padding: 40px 30px;
+
+        .project__project__projectProfilePicture__project__infoContent {
+            display: flex;
+            flex-direction: column;
+
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            margin: auto 0;
+
+            .project__project__projectProfilePicture__project__infoContent__subTitleAndTitle {
+                margin: 20px 0;
+
+                span {
+                    color: $primaryColor;
+                    font-weight: 600;
+                }
+
+                h2 {
+                    color: #E5F1FE;
+                }
+            }
+
+            .project__project__projectProfilePicture__project__infoContent__description {
+                color: #919DB9;
+
+                strong {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}

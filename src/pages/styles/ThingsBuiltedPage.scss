@@ -1,0 +1,10 @@
+.thingsBuiltedMain {
+    transition: all ease-in-out 1s;
+    opacity: 0;
+    transform: translateY(30px);
+
+    .thingsBuiltedMain__projectsArea {
+        display: flex;
+        flex-direction: column;
+    }
+}

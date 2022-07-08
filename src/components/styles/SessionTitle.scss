@@ -1,0 +1,43 @@
+@import "../../style/_variables";
+
+.title {
+    display: flex;
+    align-items: center;
+
+    /*
+    &::after {
+        content: "";
+        height: 1px;
+
+        background-color: #a8a8b3;
+        margin-left: 5px;
+
+        width: 100px;
+    }
+
+    Não funcionou
+    */
+
+    .title__contentArea {
+        .title__contentArea__count_number {
+            color: $primaryColor;
+        }
+        .title__contentArea__title {
+            color: #CCD7F5;
+        }
+    }
+
+    .title__after {
+        flex: 1;
+
+        max-width: 500px;
+        height: 1px;
+
+        border: none;
+
+        background-color: #233653;
+
+        margin-left: 24px;
+        margin-right: 20px;
+    }
+}

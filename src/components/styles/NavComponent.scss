@@ -1,10 +1,22 @@
 @import "../../style/_variables";
 
 nav {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    transform: translateY(-90px);
+
+    transition: all ease-in-out 1s;
+
+    left: 0;
+    top: 0;
+
     display: flex;
     justify-content: space-between;
 
     padding: 20px 50px 0px 50px;
+
+    backdrop-filter: blur(4px);
 
     .content {
         display: flex;
@@ -39,5 +51,17 @@ nav {
 
             cursor: pointer;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        .content {
+            display: none;
+        }
+
+        justify-content: center;
+
+        background-color: $backgroundColor;
     }
 }
