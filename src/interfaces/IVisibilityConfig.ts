@@ -1,4 +1,4 @@
 export interface IVisibilityConfig {
   transform: string;
-  opacity: string;
+  opacity: string | number;
 }

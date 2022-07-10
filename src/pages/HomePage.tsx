@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useVisibilityY } from "../hooks/useVisibilityYHook";
 import { IVisibilityConfig } from "../interfaces/IVisibilityConfig";
+import { getApperConfig } from "../modules/getApperConfig";
+
+// Interfaces
+import { IIntervals } from "../interfaces/IIntervals";
 
 // CSS
 import "./styles/HomePage.scss";
 
+let counter = 0;
+
 export function HomePage() {
   const [visibilityConfigState, setVisibilityConfigState] =
     useState<IVisibilityConfig | null>();
+  const interval: IIntervals = [0, 200];
 
   useVisibilityY(
     [visibilityConfigState, setVisibilityConfigState],
@@ -15,8 +22,17 @@ export function HomePage() {
       initialPosition: 80,
       endPosiotion: 0,
     },
-    [0, 200],
+    interval,
   );
+
+  useEffect(() => {
+    if (counter == 0) {
+      counter++;
+
+      const appearConfig = getApperConfig(interval, 20, 0);
+      setVisibilityConfigState(appearConfig);
+    }
+  });
 
   return (
     <main>
