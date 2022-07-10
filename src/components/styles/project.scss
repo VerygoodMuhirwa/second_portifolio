@@ -60,7 +60,7 @@
 
             .project__project__projectProfilePicture__project__infoContent__subTitleAndTitle {
                 margin: 20px 0;
-                text-shadow: 0px 5px 9px ;
+                text-shadow: #080808 0px 10px 20px ;
 
                 span {
                     color: $primaryColor;
@@ -85,6 +85,10 @@
             .project__project__projectProfilePicture__project__infoContent__techs {
                 margin-top: 20px;
                 color: $primaryColor;
+
+                span {
+                    margin-right: 15px;
+                }
             }
         }
     }

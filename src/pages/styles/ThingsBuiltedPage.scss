@@ -6,5 +6,15 @@
     .thingsBuiltedMain__projectsArea {
         display: flex;
         flex-direction: column;
+
+        .thingsBuiltedMain__projectsArea__myGithub {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+
+            a {
+                color: #57ABFD;
+            }
+        }
     }
 }

@@ -22,28 +22,41 @@ export function ThingsBuilted() {
       initialPosition: 80,
       endPosiotion: 0,
     },
-    [750, 1500],
+    [750, 3500],
   );
 
   return (
     <main className="thingsBuiltedMain" style={{ ...visibilityConfigState }}>
-      <SessionTitleComponent title="Things I've Build" countNumber="02" />
+      <SessionTitleComponent title="Main things I've Build" countNumber="02" />
       <div className="thingsBuiltedMain__projectsArea">
-        {projects.map((project, idx) => (
-          <ProjectComponent
-            key={project.projectProfilePicture}
-            projectData={{
-              projectProfilePicture: project.projectProfilePicture,
-              title: project.title,
-              type: project.type,
-              techs: project.techs,
-              links: project.links,
-            }}
-            inverted={idx % 2 !== 0}
-          >
-            {project.Description}
-          </ProjectComponent>
-        ))}
+        {projects.map((project, idx) => {
+          const inverted = idx % 2 !== 0;
+
+          return (
+            <ProjectComponent
+              key={project.projectProfilePicture}
+              projectData={{
+                projectProfilePicture: project.projectProfilePicture,
+                title: project.title,
+                type: project.type,
+                techs: project.techs,
+                links: project.links,
+              }}
+              inverted={inverted}
+            >
+              {project.Description}
+            </ProjectComponent>
+          );
+        })}
+
+        <div className="thingsBuiltedMain__projectsArea__myGithub">
+          <h3>
+            For more, visit my{" "}
+            <a href="https://github.com/Guilherme2014-ai?tab=repositories">
+              GitHub
+            </a>
+          </h3>
+        </div>
       </div>
     </main>
   );
