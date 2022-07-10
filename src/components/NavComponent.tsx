@@ -4,6 +4,10 @@ import images from "../images.json";
 // CSS
 import "./styles/NavComponent.scss";
 
+function changeInnerHeight(positionY: number) {
+  window.scroll(0, positionY);
+}
+
 export function NavComponent() {
   const [appear, setAppear] = useState<boolean>(false);
 
@@ -22,17 +26,11 @@ export function NavComponent() {
       </div>
       <div className="content">
         <ul>
-          <li>
-            <span>01.</span> About
+          <li onClick={() => changeInnerHeight(500)}>
+            <span>01.</span> About Me
           </li>
-          <li>
-            <span>02.</span> Experience
-          </li>
-          <li>
-            <span>03.</span> Work
-          </li>
-          <li>
-            <span>04.</span> Contact
+          <li onClick={() => changeInnerHeight(1300)}>
+            <span>02.</span> Experience / Work
           </li>
         </ul>
 

@@ -13,9 +13,9 @@
     box-shadow: 5px 10px 10px;
 
     position: relative;
-    
+
     max-width: 800px;
-    height: 300px;
+    min-height: 300px;
 
     &:hover {
         cursor: pointer;
@@ -62,6 +62,8 @@
                 margin: 20px 0;
                 text-shadow: #080808 0px 10px 20px ;
 
+                flex: 1;
+
                 span {
                     color: $primaryColor;
                     font-weight: 600;
@@ -90,6 +92,14 @@
                     margin-right: 15px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    a {
+        .exeptionProjectArea {
+            justify-content: center!important;
         }
     }
 }
