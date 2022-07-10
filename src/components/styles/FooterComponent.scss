@@ -1,0 +1,32 @@
+@import "../../style/_variables";
+
+footer {
+    display: flex;
+    align-items: center;
+
+    height: 60px;
+    border-top: 1px solid $primaryColor;
+
+    color: $primaryColor;
+    background-color: black;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+
+    padding: 10px;
+
+    div {
+        display: flex;
+        align-items: center;
+        
+        span {
+            margin-left: 25px;
+
+            a {
+                color: white;
+                margin: 0 4px;
+            }
+        }
+    }
+}
