@@ -8,14 +8,14 @@ export function FooterComponent() {
     <footer>
       <div>
         <span>
-          Guilherme Henrique - Contacts:{" "}
-          <a href="https://www.linkedin.com/in/guilherme-henrique-0bb264204/">
+          Verygood Muhirwa - Contacts:{" "}
+          <a href="https://www.linkedin.com/in/verygood-muhirwa-39a6b225b/">
             <strong>Linkedin</strong>
           </a>
-          <a href="https://github.com/Guilherme2014-ai">
+          <a href="https://github.com/VerygoodMuhirwa">
             <strong>GitHub</strong>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5515988315201&text=Olá%2C%20envie%20sua%20mensagem%2C%20logo%20irei%20responder.">
+          <a href="https://api.whatsapp.com/send?phone=+250787023438&text=Olá%2C%20envie%20sua%20mensagem%2C%20logo%20irei%20responder.">
             <strong>Whatsapp</strong>
           </a>
         </span>

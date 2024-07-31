@@ -52,7 +52,7 @@ export function ThingsBuilted() {
         <div className="thingsBuiltedMain__projectsArea__myGithub">
           <h3>
             For more, visit my{" "}
-            <a href="https://github.com/Guilherme2014-ai?tab=repositories">
+            <a href="https://github.com/VerygoodMuhirwa?tab=repositories">
               GitHub
             </a>
           </h3>

@@ -1,5 +1,4 @@
 import React from "react";
-
 // CSS
 import "./styles/SessionTitle.scss";
 

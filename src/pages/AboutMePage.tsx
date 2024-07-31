@@ -37,7 +37,7 @@ export function AboutMePage() {
       <SessionTitleComponent title="About Me" countNumber="01" />
       <div className="aboutMeMain__aboutMeContent">
         <div className="aboutMeMain__aboutMeContent__text">
-          I'm Full-Stack Developer, I live in Brazil and my Hobbies is study
+          I'm Full-Stack Developer, I live in Rwanda and my Hobbies is study
           Physics and Math, watch series, hear musics and play some game
           Sometimes, I like to solve problems with creativity to turn it the
           Simplest possible, not only for me, but also for other people.
@@ -64,7 +64,7 @@ export function AboutMePage() {
                 <ArrowRightIcon /> Firebase
               </li>
               <li>
-                <ArrowRightIcon /> AWS
+                <ArrowRightIcon /> Spring boot 
               </li>
             </div>
             <div>
@@ -72,10 +72,10 @@ export function AboutMePage() {
                 <ArrowRightIcon /> Linux
               </li>
               <li>
-                <ArrowRightIcon /> CMS's
+                <ArrowRightIcon /> NestJS 
               </li>
               <li>
-                <ArrowRightIcon /> GraphQL
+                <ArrowRightIcon /> React 
               </li>
               <li>
                 <ArrowRightIcon /> REST APIs
@@ -86,10 +86,10 @@ export function AboutMePage() {
             </div>
             <div>
               <li>
-                <ArrowRightIcon /> SQL Databases
+                <ArrowRightIcon /> SQL Databases (MySQL, PostgreSQL)
               </li>
               <li>
-                <ArrowRightIcon /> NOSQL Databases
+                <ArrowRightIcon /> NOSQL Databases(MongoDB)
               </li>
               <li>
                 <ArrowRightIcon /> JWT Verifications
@@ -98,11 +98,11 @@ export function AboutMePage() {
           </ul>
         </div>{" "}
         <div className="my_pictureContainer">
-          <a href="https://github.com/Guilherme2014-ai">
+          <a href="https://github.com/VerygoodMuhirwa">
             <img
               className="my_picture"
-              src="https://avatars.githubusercontent.com/u/77082955?v=4"
-              alt="me"
+              src="https://avatars.githubusercontent.com/u/121917699?v=4"
+              alt="me"  
             />
           </a>
         </div>
